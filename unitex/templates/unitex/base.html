@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'unitex/style.css' %}">
+    <title>UnITex IT School</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul class="navbar-items">
+            <li class="navbar-item">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="{% url 'register' %}">Register</a>
+            </li>
+            <li class="navbar-item">
+                <a href="{% url 'login' %}">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main content -->
+    <main id="main">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

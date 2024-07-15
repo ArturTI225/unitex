@@ -1,0 +1,84 @@
+{% extends "unitex/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="welcome-section">
+    <h1>Bun venit la UnITex</h1>
+    <p>Un viitor mai bun pentru copiii voștri.</p>
+</div>
+
+<div class="about-section">
+    <h2>Despre UnITex</h2>
+    <p>UnITex este o școală de IT din Ungheni pentru copii cu vârste între 7 și 17 ani.</p>
+    <p>Oferim programe educaționale adaptate fiecărei grupe de vârstă, încurajând creativitatea și abilitățile de rezolvare a problemelor prin activități interactive și distractive.</p>
+</div>
+
+<div class="age-groups">
+    <div class="age-group">
+        <h2>Vârsta 7-9 ani</h2>
+        <img src="{% static 'images/age7-9.jpg' %}" alt="Copii cu vârsta 7-9 ani">
+        <p>Introducerea în programare prin activități interactive și distractive.</p>
+        <p>Cursurile noastre pentru copiii cu vârsta între 7 și 9 ani se concentrează pe construirea unei fundații solide în programare prin activități practice care stimulează creativitatea și abilitățile de rezolvare a problemelor.</p>
+    </div>
+
+    <div class="age-group">
+        <h2>Vârsta 10-13 ani</h2>
+        <img src="{% static 'images/age10-13.jpg' %}" alt="Copii cu vârsta 10-13 ani">
+        <p>Explorarea conceptelor avansate de programare și crearea proiectelor mai complexe.</p>
+        <p>Elevii cu vârsta între 10 și 13 ani vor învăța concepte de programare mai avansate, vor lucra la proiecte interesante și vor începe să înțeleagă cum să aplice abilitățile lor în rezolvarea problemelor din lumea reală.</p>
+    </div>
+
+    <div class="age-group">
+        <h2>Vârsta 13-15 ani</h2>
+        <img src="{% static 'images/age13-15.jpg' %}" alt="Adolescenți cu vârsta 13-15 ani">
+        <p>Dezvoltarea abilităților intermediare și avansate de programare și lucrul la aplicații cu utilitate în lumea reală.</p>
+        <p>Adolescenții cu vârsta între 13 și 15 ani își vor dezvolta în continuare abilitățile de programare, lucrând la proiecte mai sofisticate și începând să construiască aplicații cu utilitate practică.</p>
+    </div>
+
+    <div class="age-group">
+        <h2>Vârsta 15-17 ani</h2>
+        <img src="{% static 'images/age15-17.jpg' %}" alt="Adolescenți cu vârsta 15-17 ani">
+        <p>Dominarea tehnicilor avansate de programare și pregătirea pentru carierele viitoare în tehnologie.</p>
+        <p>Cursurile noastre pentru adolescenții cu vârsta între 15 și 17 ani îi pregătesc pentru viitor, fie că urmează să continue studiile în domeniul tehnologiei sau să înceapă cariere în acest domeniu. Vor lucra la proiecte avansate și vor învăța despre cele mai recente tehnologii.</p>
+    </div>
+</div>
+
+<div class="">
+
+</div>
+
+
+
+{% block footer %}
+<div class="footer">
+    <div class="footer-content">
+        <div class="map">
+            <h2>Locația noastră</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169.40381725510184!2d27.802359708637912!3d47.20755991948427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb01006e887725%3A0x88367241cbbec41d!2sUnITex!5e0!3m2!1sen!2s!4v1721050423300!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="schedule-section">
+            <h2>Orarul nostru</h2>
+            <ul>
+                <li>Luni - Vineri: 9:00 - 18:00</li>
+                <li>Sâmbătă: 10:00 - 16:00</li>
+                <li>Duminică: Închis</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contactați-ne</h2>
+            <p>Email: pyt.unitex@gmail.com</p>
+            <p>Telefon: +373 69 792 355</p>
+            <p>Adresă: Ungheni, Str.Feroviară 39A</p>
+        </div>
+        <div class="contact-info">
+            <h2>Retele de socializare</h2>
+            <h4><a href="https://www.facebook.com/PYTUNITEX">Facebook</a></h4>
+            <h4><a href="">Instagram</a></h4>
+            <h4><a href="https://www.tiktok.com/@unitex.ungheni">TikTok</a></h4>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% endblock %}

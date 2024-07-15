@@ -1,0 +1,196 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Стили для навигационного меню */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Стили для разделов страницы */
+.welcome-section {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.welcome-section p {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+.about-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.age-groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.age-group {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.age-group img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.age-group h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.age-group p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 1200px) {
+    .age-group {
+        width: calc(33.333% - 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    .age-group {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .age-group {
+        width: calc(100% - 40px);
+    }
+}
+
+.schedule-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.schedule-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.schedule-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule-section ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Стили для подвала */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-content .map,
+.footer-content .contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-content iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #dddddd; /* Цвет текста */
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #aaaaaa; /* Цвет текста при наведении */
+}
